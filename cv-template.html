@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- ============================================================
+  ARCHIVO: cv-template.html
+  PROPÓSITO: Plantilla de CV / Hoja de Vida usando Bootstrap 5
+  APRENDIZ: Modifica todo lo que está entre las etiquetas
+============================================================ -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi CV</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Opcional: iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <div class="container py-5">
+    <div class="row">
+
+      <!-- ==========================================================
+        COLUMNA IZQUIERDA: Datos personales, foto, contacto, idiomas
+      ========================================================== -->
+      <div class="col-md-4 bg-light p-4 rounded shadow-sm">
+
+        <!-- Cambia la foto. Reemplaza 'https://plugins-media.makeupar.com/smb/blog/post/2024-12-28/5638de9f-49f1-4224-8a22-4d3b12b7d5d4.png' con la URL de tu imagen -->
+        <div class="text-center mb-4">
+          <img src="https://plugins-media.makeupar.com/smb/blog/post/2024-12-28/5638de9f-49f1-4224-8a22-4d3b12b7d5d4.png" alt="Foto de perfil" class="img-fluid rounded-circle border border-3 border-primary">
+        </div>
+
+        <!-- Completa tus datos personales -->
+        <h2 class="h5 border-bottom pb-2"><i class="bi bi-person-circle"></i> Datos Personales</h2>
+        <ul class="list-unstyled small">
+          <li><strong>Nombre:</strong> <!-- tu nombre --> </li>
+          <li><strong>Email:</strong> <!-- tu@email.com --> </li>
+          <li><strong>Teléfono:</strong> <!-- +56 9 XXXX XXXX --> </li>
+          <li><strong>Dirección:</strong> <!-- ciudad, país --> </li>
+        </ul>
+
+        <!-- Actualiza tus perfiles sociales -->
+        <h2 class="h5 border-bottom pb-2 mt-4"><i class="bi bi-link-45deg"></i> Redes / Portafolio</h2>
+        <ul class="list-unstyled small">
+          <li><a href="#" target="_blank"><i class="bi bi-linkedin"></i> <!-- LinkedIn --></a></li>
+          <li><a href="#" target="_blank"><i class="bi bi-github"></i> <!-- GitHub --></a></li>
+          <li><a href="#" target="_blank"><i class="bi bi-globe"></i> <!-- Portafolio web --></a></li>
+        </ul>
+
+        <!-- Lista tus idiomas con nivel -->
+        <h2 class="h5 border-bottom pb-2 mt-4"><i class="bi bi-translate"></i> Idiomas</h2>
+        <ul class="list-unstyled small">
+          <li>Español — Nativo</li>
+          <!-- <li>Idioma — Nivel</li> -->
+        </ul>
+
+      </div>
+
+      <!-- ==========================================================
+        COLUMNA DERECHA: Perfil, experiencia, educación, habilidades
+      ========================================================== -->
+      <div class="col-md-8 p-4">
+
+        <!-- Redacta un resumen profesional breve (2-3 líneas) -->
+        <div class="mb-4">
+          <h1 class="display-6"><!-- Tu Nombre Completo --></h1>
+          <p class="text-muted"><!-- Profesión o cargo deseado --></p>
+          <p><!-- Perfil profesional... --></p>
+        </div>
+
+        <!-- Agrega o quita experiencias laborales -->
+        <h2 class="h5 border-bottom pb-2"><i class="bi bi-briefcase"></i> Experiencia Laboral</h2>
+        <div class="mb-3">
+          <h6 class="mb-0"><!-- Cargo --> — <span class="text-primary"><!-- Empresa --></span></h6>
+          <small class="text-muted"><!-- Mes AAAA - Mes AAAA --></small>
+          <ul class="small mt-1">
+            <li><!-- Logro o responsabilidad --></li>
+            <li><!-- Logro o responsabilidad --></li>
+          </ul>
+        </div>
+        <div class="mb-3">
+          <h6 class="mb-0"><!-- Cargo --> — <span class="text-primary"><!-- Empresa --></span></h6>
+          <small class="text-muted"><!-- Mes AAAA - Mes AAAA --></small>
+          <ul class="small mt-1">
+            <li><!-- Logro o responsabilidad --></li>
+          </ul>
+        </div>
+
+        <!-- Agrega o quita formación académica -->
+        <h2 class="h5 border-bottom pb-2 mt-4"><i class="bi bi-mortarboard"></i> Educación</h2>
+        <div class="mb-2">
+          <h6 class="mb-0"><!-- Título o carrera --></h6>
+          <small class="text-muted"><!-- Institución — AAAA --></small>
+        </div>
+        <div class="mb-2">
+          <h6 class="mb-0"><!-- Título o carrera --></h6>
+          <small class="text-muted"><!-- Institución — AAAA --></small>
+        </div>
+
+        <!-- Lista tus habilidades técnicas / blandas -->
+        <h2 class="h5 border-bottom pb-2 mt-4"><i class="bi bi-gear"></i> Habilidades</h2>
+        <div class="row small">
+          <div class="col-6">
+            <ul>
+              <li><!-- Habilidad 1 --></li>
+              <li><!-- Habilidad 2 --></li>
+              <li><!-- Habilidad 3 --></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li><!-- Habilidad 4 --></li>
+              <li><!-- Habilidad 5 --></li>
+              <li><!-- Habilidad 6 --></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Opcional — certificaciones, cursos, hobbies -->
+        <h2 class="h5 border-bottom pb-2 mt-4"><i class="bi bi-patch-check"></i> Certificaciones</h2>
+        <ul class="small">
+          <li><!-- Certificación / curso --></li>
+          <li><!-- Certificación / curso --></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (opcional, solo si necesitas componentes interactivos) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
